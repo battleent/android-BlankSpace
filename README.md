@@ -37,7 +37,7 @@ public void onClick(View view) {
 }
 ```
 
-## Memory leak issue
+## Avoid Memory leak issue
 Dialog, PopupWindow and etc.. have memory leak issue if not dismissed before activity or fragment are destroyed.<br>
 But Lifecycles are now also integrated with the Support Library since Architecture Components 1.0 Stable released.<br>
 So you can solve memory leak issue so easily.
