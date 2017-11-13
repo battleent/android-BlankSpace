@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+    userOrg = 'battleent'
+    groupId = 'com.github.battleent'
+    artifactId = 'BlankSpace'
+    publishVersion = '1.0.1'
+    desc = 'This is an android popup library "BlankSpace".'
+    website = 'https://github.com/battleent/BlankSpace'
+    issueTracker = "${website}/issues"
+    repository = "${website}.git"
+}
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:+'
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/img_not_found"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/img_myinfor_sadrio"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_not_found"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:text="No results found..."/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/background"
+        android:text="back"
+        android:layout_below="@+id/label"
+        android:layout_margin="25dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
