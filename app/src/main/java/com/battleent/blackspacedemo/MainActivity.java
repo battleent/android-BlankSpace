@@ -23,32 +23,52 @@ public class MainActivity extends AppCompatActivity implements LifecycleOwner {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        blankSpace = new BlankSpace(getBaseContext(), R.layout.layout_not_found);
-        blankSpace.setLifecycleOwner(this);
-        blankSpace.setAnimation(BlankSpaceAnimation.FADE_IN);
-
         Button button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                setBlankSpace(R.layout.layout_not_found);
                 View layout = findViewById(R.id.mainlayout);
                 blankSpace.show(layout, 0, 20);
             }
         });
 
-        Button button2 = blankSpace.getParentView().findViewById(R.id.button2);
+        Button button2 = findViewById(R.id.button2);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                blankSpace.dismiss();
+                setBlankSpace(R.layout.layout_connect_fail);
+                View layout = findViewById(R.id.mainlayout);
+                blankSpace.show(layout, 0, 20);
             }
         });
+
+        Button button3 = findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setBlankSpace(R.layout.layout_no_comment);
+                View layout = findViewById(R.id.mainlayout);
+                blankSpace.show(layout, 0, 20);
+            }
+        });
+    }
+
+    private void setBlankSpace(int layout) {
+        blankSpace = new BlankSpace(getBaseContext(), layout);
+        blankSpace.setLifecycleOwner(this);
+        blankSpace.setAnimation(BlankSpaceAnimation.FADE_IN);
+    }
+
+    public void dismiss(View view) {
+        if(blankSpace != null && blankSpace.isShowing())
+            blankSpace.dismiss();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if(blankSpace.isShowing())
+        if(blankSpace != null && blankSpace.isShowing())
             blankSpace.dismiss();
     }
 }
