@@ -1,5 +1,5 @@
 # android-BlankSpace
-Do not write boilperplate xml code.
+This is an android popup library "BlankSpace" by [Battle Entertainment](https://www.battleent.com/) <br>
 
 ![gif](https://user-images.githubusercontent.com/24237865/32729594-a9973a88-c8c7-11e7-84d0-61ced279d420.gif)
 
@@ -12,7 +12,7 @@ dependencies {
 ```
 
 ## What is BlankSpace?
-We always write too many boilerplate codes just showing "no-result" or "try to reconnect" screens.<br>
+We always write too many XML codes just showing "no-result" or "try to reconnect" screens.<br>
 Then we can't avoid two section screen(main is visible, no-result is gone) in xml.<br>
 That makes we sometimes little confused.
 
