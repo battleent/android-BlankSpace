@@ -1,7 +1,7 @@
 # android-BlankSpace
 This is an android popup library "BlankSpace" by [Battle Entertainment](https://www.battleent.com/) <br>
 
-![gif](https://user-images.githubusercontent.com/24237865/32729594-a9973a88-c8c7-11e7-84d0-61ced279d420.gif)
+![gif](https://user-images.githubusercontent.com/24237865/32733834-b21b19ac-c8d3-11e7-8a27-3e0ff3dff48a.gif)
 
 ## Download
 #### Gradle
