@@ -7,7 +7,7 @@ This is an android library "BlankSpace" by [Battle Entertainment](https://www.ba
 #### Gradle
 ```java
 dependencies {
-    compile 'com.github.battleent:BlankSpace:1.0.2'
+    compile 'com.github.battleent:BlankSpace:1.0.3'
 }
 ```
 
