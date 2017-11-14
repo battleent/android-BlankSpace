@@ -35,7 +35,7 @@ blankSpace.show(layout);
 You can use just like a popup.
 
 ```java
-blankSpacePopup = new BlankSpace(getBaseContext(), R.layout.layout_not_found);
+blankSpacePopup = new BlankSpacePopup(getBaseContext(), R.layout.layout_not_found);
 blankSpacePopup.setLifecycleOwner(this);
 blankSpacePopup.setAnimation(BlankSpaceAnimation.FADE_IN);
 
