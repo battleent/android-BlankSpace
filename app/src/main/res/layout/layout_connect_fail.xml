@@ -23,7 +23,7 @@
         android:text="Fail to connect to server."/>
 
     <Button
-        android:onClick="dismiss"
+        android:onClick="dismissPopup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"

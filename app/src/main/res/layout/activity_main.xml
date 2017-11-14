@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/mainlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    android:orientation="vertical">
+    android:background="@color/background">
 
     <Button
         android:id="@+id/button"
@@ -12,7 +11,6 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:textColor="@color/background"
-        android:layout_centerInParent="true"
         android:layout_margin="25dp"
         android:layout_centerHorizontal="true"
         android:text="my item list"/>
@@ -21,9 +19,9 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
         android:background="@color/colorPrimary"
         android:textColor="@color/background"
-        android:layout_centerInParent="true"
         android:layout_margin="25dp"
         android:layout_centerHorizontal="true"
         android:text="my profile"/>
@@ -32,11 +30,11 @@
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
         android:background="@color/colorPrimary"
         android:textColor="@color/background"
-        android:layout_centerInParent="true"
         android:layout_margin="25dp"
         android:layout_centerHorizontal="true"
         android:text="comments"/>
 
-</LinearLayout>
+</RelativeLayout>
