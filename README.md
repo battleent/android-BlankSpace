@@ -1,5 +1,5 @@
 # android-BlankSpace
-This is an android popup library "BlankSpace" by [Battle Entertainment](https://www.battleent.com/) <br>
+This is an android library "BlankSpace" by [Battle Entertainment](https://www.battleent.com/) <br>
 
 ![gif](https://user-images.githubusercontent.com/24237865/32733834-b21b19ac-c8d3-11e7-8a27-3e0ff3dff48a.gif)
 
@@ -7,7 +7,7 @@ This is an android popup library "BlankSpace" by [Battle Entertainment](https://
 #### Gradle
 ```java
 dependencies {
-    compile 'com.github.battleent:BlankSpace:1.0.1'
+    compile 'com.github.battleent:BlankSpace:1.0.2'
 }
 ```
 
@@ -23,21 +23,30 @@ In below case we will get confused because it's not intuitive.</br></br>
 ![screenshot43552780](https://user-images.githubusercontent.com/24237865/32730298-f69067d6-c8c9-11e7-84fb-e6e3acc4a7c7.png)
 
 ## Usage
+
+### BlankSpace
+```java
+blankSpace = new BlankSpace(getBaseContext(), R.layout.layout_no_comment);
+RelativeLayout layout = findViewById(R.id.mainlayout);
+blankSpace.show(layout);
+```
+
+### BlankSpacePopup
 You can use just like a popup.
 
 ```java
-blankSpace = new BlankSpace(getBaseContext(), R.layout.layout_not_found);
-blankSpace.setLifecycleOwner(this);
-blankSpace.setAnimation(BlankSpaceAnimation.FADE_IN);
+blankSpacePopup = new BlankSpace(getBaseContext(), R.layout.layout_not_found);
+blankSpacePopup.setLifecycleOwner(this);
+blankSpacePopup.setAnimation(BlankSpaceAnimation.FADE_IN);
 
 @Override
 public void onClick(View view) {
     View layout = findViewById(R.id.mainlayout);
-    blankSpace.show(layout, 0, 20); // layout, xOff, yOff
+    blankSpacePopup.show(layout, 0, 20); // layout, xOff, yOff
 }
 ```
 
-## Avoid Memory leak issue
+#### Avoid memory leak issue
 Dialog, PopupWindow and etc.. have memory leak issue if not dismissed before activity or fragment are destroyed.<br>
 But Lifecycles are now also integrated with the Support Library since Architecture Components 1.0 Stable released.<br>
 So you can solve memory leak issue so easily.
