@@ -1,4 +1,4 @@
-# android-BlankSpace
+# android-BlankSpace [![CircleCI](https://circleci.com/gh/battleent/android-BlankSpace.svg?style=svg)](https://circleci.com/gh/battleent/android-BlankSpace) <br>
 This is an android library "BlankSpace" by [Battle Entertainment](https://www.battleent.com/) <br>
 
 ![gif](https://user-images.githubusercontent.com/24237865/32733834-b21b19ac-c8d3-11e7-8a27-3e0ff3dff48a.gif)
