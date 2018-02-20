@@ -13,7 +13,7 @@
         android:textColor="@color/background"
         android:layout_margin="25dp"
         android:layout_centerHorizontal="true"
-        android:text="my item list"/>
+        android:text="my items"/>
 
     <Button
         android:id="@+id/button2"
