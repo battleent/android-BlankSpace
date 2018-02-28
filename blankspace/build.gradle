@@ -5,7 +5,7 @@ publish {
     userOrg = 'battleent'
     groupId = 'com.github.battleent'
     artifactId = 'BlankSpacePopup'
-    publishVersion = '1.0.2'
+    publishVersion = '1.0.3'
     desc = 'This is an android popup library "BlankSpacePopup".'
     website = 'https://github.com/battleent/BlankSpacePopup'
     issueTracker = "${website}/issues"
@@ -27,5 +27,5 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:+'
+    compile 'com.android.support:appcompat-v7:26.1.0'
 }
