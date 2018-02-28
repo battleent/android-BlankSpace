@@ -4,10 +4,10 @@ apply plugin: 'com.novoda.bintray-release'
 publish {
     userOrg = 'battleent'
     groupId = 'com.github.battleent'
-    artifactId = 'BlankSpacePopup'
-    publishVersion = '1.0.3'
-    desc = 'This is an android popup library "BlankSpacePopup".'
-    website = 'https://github.com/battleent/BlankSpacePopup'
+    artifactId = 'BlankSpace'
+    publishVersion = '1.0.4'
+    desc = 'This is an android library "BlankSpace".'
+    website = 'https://github.com/battleent/BlankSpace'
     issueTracker = "${website}/issues"
     repository = "${website}.git"
 }
